@@ -9,11 +9,11 @@ const port = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// app.use(cors({
-//     origin: 'https://json-viewer-lyart.vercel.app/', // Replace with your frontend URL
-//     methods: 'GET,POST', // Allow specific HTTP methods
-//     allowedHeaders: 'Content-Type,Authorization', // Allow specific headers
-//   }));
+app.use(cors({
+    origin: 'https://json-viewer-lyart.vercel.app/', // Replace with your frontend URL
+    methods: 'GET,POST', // Allow specific HTTP methods
+    allowedHeaders: 'Content-Type,Authorization', // Allow specific headers
+  }));
 
 
 // Route to parse and validate JSON
