@@ -26,7 +26,7 @@ function App() {
 
     // If JSON is valid, make API request
     try {
-      const response = await axios.post('https://json-viewer-backend.vercel.app/api/validate-json', parsedInput);
+      const response = await axios.post('/api/validate-json', parsedInput);
       setParsedData(response.data.data);
       toast.success('Parsed data successfully');
     } catch (err) {
